@@ -6,24 +6,7 @@
 </head>
 
 <body>
-    <script>
-        let correoCliente = ""; // "" => vacio
-        correoCliente = prompt("Suscríbete con tu correo");
-        if (!correoCliente.includes("@")) { 
-            alert("Ingresa un Correo Valido") 
-        }
-        let nombreCliente = ""; // "" => vacio
-        nombreCliente = prompt("Por favor danos tu nombre");
-        if (!nombreCliente != "") { 
-            alert("Tu registro está incompleto") 
-        }
-        let esMayorDeEdad = confirm("¿Tienes más de 18 años?");
-        if (esMayorDeEdad) {
-            alert("Bienvenido " + nombreCliente);
-        } else {
-            alert("No deberías estar en este sitio " + nombreCliente);
-        }
-    </script>
+    <script src="app.js"></script>
     <header>
         <img src="img/logo.png">
         <button> Categorias </button>
@@ -33,16 +16,13 @@
         </a>
         <button>
             <script>
-                if (!correoCliente.includes("@")) { document.write("Registro/Inicio Sesión") }
+                document.write(correoCliente)
             </script>
         </button>
     </header>
     <main>
         <script>
-            if (nombreCliente != "") {
-                document.write("Bienvenido " + nombreCliente)
-            }
-            else { document.write("Por favor termina tu registro") }
+            document.write("Bienvenido " + nombreCliente)
         </script>
         <a href="https://johelcg7.github.io/tienda-regalos/product">
             <img class="banner" src="img/banner.jpg">
