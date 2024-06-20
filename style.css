@@ -48,16 +48,30 @@ footer {
     background-color: #47A8BD
 }
 
-footer ul {display: flex;
+footer ul {
+    display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
+
 footer a {
     text-decoration: none;
     color: white;
 }
+
 img {
     height: 100px;
     display: block;
     margin: 0px auto;
+}
+
+.contenedorElementos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.contenedorElementos img {
+    display: inline-block;
+    justify-content: space-evenly;
 }
